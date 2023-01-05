@@ -15,6 +15,7 @@
 
   body{
     background-color: #d1c6f065;
+    overflow-x: hidden;
   }
   @font-face {
     font-family:DuneFont ;
@@ -228,7 +229,7 @@
 .map{
     margin-top : 0px ;
     height: 400px;
-    width : 100% ;
+    width : 100vw;
     display: block;
 
 }
@@ -242,7 +243,7 @@
 }
 .lower {
     position: relative;
-    top: 12px;
+    top: 24px;
     width: 100%;
     padding-top: 6px;
     height: 52px;
@@ -264,7 +265,10 @@
 
   
 @media screen and (max-width: 768px) {
-  
+
+  #change{
+    display: none;
+  }
   .contents{
     flex-direction: column;
     align-items: left;
@@ -288,7 +292,7 @@
 
   .names
   {
-    font-size: 12px;
+    font-size: 15px;
     padding-left: 10px;
   }
   }
@@ -298,5 +302,7 @@
   {  .footer {
     height: 265px;
     }
+
+   
   }
 
